@@ -6,13 +6,13 @@ body {
 	padding-top: 50px;
 }
 
-.page .title {
+.page>.title {
 	color: #0c9ec8;
 	font-size: 30px;
 	text-align: center;
 }
 
-.page .subtitle {
+.page>.subtitle {
 	margin-top: 20px;
 	color: #999;
 	font-size: 16px;
@@ -21,7 +21,7 @@ body {
 	font-family: 'Arial';
 }
 
-.page .subtitle:after {
+.page >.subtitle:after {
 	content: '';
 	height: 2px;
 	display: block;
@@ -186,4 +186,97 @@ body {
 
 .page .userlist .user-item:hover .show {
 	background: #0c9ec8;
+}
+ .bread{
+	color: #666;
+	line-height: 60px;
+}
+ .bread a{
+	 color: #666;
+ }
+.userDetails{
+	background: #fff;
+	padding: 40px 30px;
+	line-height: 36px;
+	color: #333;
+}
+.userDetails>img{
+	display: block;
+	margin: 0 auto;
+}.userDetails p{text-indent: 2em;}.userDetails .title{
+	font-size: 16px;
+	font-weight: bold;
+	margin-top: 40px;
+}
+.articlepage{
+	color: #999;
+	text-align: center;
+	padding: 30px 0;
+}.articlepage a{
+	color: #999;
+}.articlepage a+a{
+	margin-left: 50px;
+}
+.newslist .newsitem{
+	width: 580px;
+	float: right;
+	background: #fff;
+	padding: 30px 20px;
+	border: 2px solid transparent;
+	margin-bottom: 30px;
+}
+.newslist .newsitem:hover{
+	border-bottom-color: #0c9ec8;
+}
+.newslist .newsitem:nth-child(odd){
+	float: left;
+}
+.newslist .newsitem .time{
+	background: #dadada;
+	color: #666;
+	height: 98px;
+	width: 100px;
+	padding-left: 20px;
+	padding-top: 30px;
+	margin-right: 20px;
+}
+.newslist .newsitem .time p:first-child{
+	font-size: 22px;
+	margin-bottom: 5px;
+	
+}
+.newslist .newsitem  .title{
+	font-size: 16px;
+	color: #333;
+}
+.newslist .newsitem  .title+ p{
+	color: #666;
+	line-height: 26px;
+	text-indent: 2em;
+	margin-top: 10px;
+}
+
+.newsdetails{
+	background: #fff;
+	padding: 40px 60px;
+}
+.newsdetails>.title{
+	text-align: center;
+	font-size: 18px;
+	color: #333;
+}.newsdetails>.time{
+	font-size: 12px;
+	color: #999;
+	margin-top: 15px;
+	text-align: center;
+}
+.newsdetails p{
+	line-height: 28px;
+	color: #666;
+	margin-top: 40px;
+	text-indent: 2em;
+}
+.newsdetails img{
+	display: block;
+	margin: 45px auto;
 }
