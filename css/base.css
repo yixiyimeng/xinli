@@ -147,6 +147,8 @@ select::-ms-expand {
 
 .mt30 {
 	margin-top: 30px;
+}.mt35 {
+	margin-top: 35px;
 }
 
 .mt20 {
@@ -174,7 +176,9 @@ select::-ms-expand {
 .mt5 {
 	margin-top: 5px;
 }
-
+.mt-10{
+	margin-top: -10px;
+}
 .pb5 {
 	padding-bottom: 5px;
 }
@@ -411,7 +415,7 @@ select::-ms-expand {
 }
 
 .modbox .modbox-bd {
-	padding: 20px;
+	padding: 20px 20px 10px;
 }
 
 .modbox .modbox-bd .imgbox img {
@@ -419,15 +423,15 @@ select::-ms-expand {
 	width: 100%;
 }
 
-.modbox .modbox-bd .viewlist li+li {
+/* .modbox .modbox-bd .viewlist li+li {
 	margin-top: 20px;
-}
+} */
 
 .modbox .modbox-bd .viewlist a {
 	color: #333;
 	display: block;
-
 	position: relative;
+	line-height: 34px;
 }
 
 .modbox .modbox-bd .viewlist a span {
@@ -447,6 +451,7 @@ select::-ms-expand {
 	margin-right: 8px;
 	position: absolute;
 	left: 0;
+	top: 10px;
 }
 
 .modbox .modbox-bd .viewlist a:hover {

@@ -24,7 +24,7 @@
 			<div class="nav">
 				<ul class="w1200 clearfix">
 					<li class="active"><a href="">首页</a></li>
-					<li class="sublink"><a href="javascript:;" >协会介绍</a>
+					<li class="sublink"><a href="javascript:;">协会介绍</a>
 						<ul class="subnav">
 							<li><a href="">协会介绍</a></li>
 							<li><a href="">协会章程</a></li>
@@ -61,14 +61,14 @@
 		<div class="grid flex w1200 mt30">
 			<div class="main flex-1 ">
 				<div class="flex">
-					<div class="modbox w300">
+					<div class="modbox w300 h375">
 						<div class="modbox-hd flex flex-pack-justify"><span>会员名录</span>
 							<a href="javascript:;" class="more">MORE+</a></div>
 						<div class="modbox-bd">
 							<div class="imgbox">
 								<img src="img/demo/img1.jpg">
 							</div>
-							<ul class="viewlist mt20">
+							<ul class="viewlist mt10">
 								<li><a href=""><i></i><span>广州竞胜保洁服务有限公司</span></a></li>
 								<li><a href=""><i></i><span>广州竞胜保洁服务有限公司广州竞胜保洁服务有限公司广州竞胜保洁服务有限公司</span></a></li>
 								<li><a href=""><i></i><span>广州竞胜保洁服务有限公司</span></a></li>
@@ -77,7 +77,7 @@
 							</ul>
 						</div>
 					</div>
-					<div class="modbox w560 ml20">
+					<div class="modbox w560 ml20 h375">
 						<div class="modbox-hd flex flex-pack-justify"><span>协会介绍</span>
 							<a href="javascript:;" class="more">MORE+</a></div>
 						<div class="modbox-bd flex">
@@ -109,7 +109,7 @@
 								<p class="mt10">本协会于2014年12月经广州市民政局批准成立，月经广州市民政局批准成立月经广州市民政局批准成立是由市内心理咨询师、从事心理健康教育、心理咨询工作的专家、学者以及相关心理学工作者自愿组成的全市性、专业性、非盈利性。</p>
 							</div>
 						</div>
-						<ul class="viewlist newlist clearfix mt30">
+						<ul class="viewlist newlist clearfix mt20">
 							<li><a href=""><i></i><span>广州竞胜保洁服务有限公司</span></a></li>
 							<li><a href=""><i></i><span>广州竞胜保洁服务有限公司广州竞胜保洁服务有限公司广州竞胜保洁服务有限公司</span></a></li>
 							<li><a href=""><i></i><span>广州竞胜保洁服务有限公司</span></a></li>
@@ -166,7 +166,7 @@
 					<div class="modbox-hd flex flex-pack-justify blue-modbox-hd"><span>最新课程与活动</span>
 						<a href="javascript:;" class="more">MORE+</a></div>
 					<div class="modbox-bd">
-						<ul class="viewlist pb5">
+						<ul class="viewlist mt-10">
 							<li><a href=""><i></i><span>大家很快在脑海中浮现出一只白</span></a></li>
 							<li><a href=""><i></i><span>广州竞胜保洁服务有限公司广州竞胜保洁服务有限公司广州竞胜保洁服务有限公司</span></a></li>
 							<li><a href=""><i></i><span>广州竞胜保洁服务有限公司</span></a></li>
@@ -211,7 +211,7 @@
 					<div class="modbox-hd flex flex-pack-justify"><span>政策法规</span>
 						<a href="javascript:;" class="more">MORE+</a></div>
 					<div class="modbox-bd">
-						<ul class="viewlist pb5">
+						<ul class="viewlist mt-10">
 							<li><a href=""><i></i><span>大家很快在脑海中浮现出一只白</span></a></li>
 							<li><a href=""><i></i><span>广州竞胜保洁服务有限公司广州竞胜保洁服务有限公司广州竞胜保洁服务有限公司</span></a></li>
 							<li><a href=""><i></i><span>广州竞胜保洁服务有限公司</span></a></li>
@@ -234,7 +234,7 @@
 					<div class="imgbox">
 						<img src="img/demo/img5.jpg">
 					</div>
-					<ul class="viewlist mt20">
+					<ul class="viewlist mt10">
 						<li><a href=""><i></i><span>广州竞胜保洁服务有限公司</span></a></li>
 						<li><a href=""><i></i><span>广州竞胜保洁服务有限公司广州竞胜保洁服务有限公司广州竞胜保洁服务有限公司</span></a></li>
 						<li><a href=""><i></i><span>广州竞胜保洁服务有限公司</span></a></li>
@@ -262,7 +262,7 @@
 							<img src="img/demo/img6.jpg">
 						</div>
 					</div>
-					<div class="expertlist flex flex-pack-justify mt30">
+					<div class="expertlist flex flex-pack-justify mt35">
 						<div class="expert-item flex-1 flex flex-align-center">
 							<div class="txt flex-1">
 								<div class="name">陈彩琦教授</div>
@@ -455,7 +455,16 @@
 		loop: true,
 		autoplay: {
 			delay: 0,
-			disableOnInteraction: false //就算触摸了也继续滚动
+			disableOnInteraction: true //就算触摸了也继续滚动
 		}
-	})
+	});
+	//鼠标覆盖停止自动切换
+	$('.consultantlist .swiper-container')[0].onmouseenter = function() {
+		console.log(1);
+		swiper3.autoplay.stop();
+	}
+	// 鼠标离开 继续轮播
+	$('.consultantlist .swiper-container')[0].onmouseleave = function() {
+		swiper3.autoplay.start();
+	}
 </script>
