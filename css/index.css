@@ -367,6 +367,9 @@ transition: all .3s;
 	color: #333;
 	display: inline-block;
 }
+.friendlink a:hover{
+	color: #0790b7;
+}
 .friendlink span{
 	margin: 0 20px;color: #333;
 	padding: 10px 0;

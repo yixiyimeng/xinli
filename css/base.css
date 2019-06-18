@@ -302,8 +302,23 @@ select::-ms-expand {
 	float: left;
 	background: #35b4d9;
 	margin-left: 10px;
+	position: relative;
+	overflow: hidden;
 }
-
+.header .topnav .searchbar .login-btn:after,.userinfo .login-btn:after{
+	content: '';
+	display: block;
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: rgba(255,255,255,.2);
+	opacity: 0;
+}
+.header .topnav .searchbar .login-btn:hover:after,.userinfo .login-btn:hover:after{
+	opacity: 1;
+}
 .header .topnav .searchbar .login-btn.hy-login-btn,.userinfo .login-btn.hy-login-btn {
 	background: #40ad34;
 }

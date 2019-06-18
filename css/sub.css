@@ -101,7 +101,10 @@ body {
 	color: #666;
 	line-height: 48px;
 }
-
+.page .pagination a:hover{
+	background-color: #0c9ec8;
+	color: #fff;
+}
 .page .pagination a.prev {
 	background-image: url(../img/arrowleft3.png);
 }
@@ -279,4 +282,36 @@ body {
 .newsdetails img{
 	display: block;
 	margin: 45px auto;
+}
+.activelist .activeitem{
+	background: #fff;
+	padding: 30px;
+	font-size: 16px;
+	color: #666;
+}
+.activelist .activeitem .imgbox{
+	width: 340px;
+	margin-right: 35px;
+}
+.activelist .activeitem .imgbox img{
+	width: 100%;
+}
+.activelist .activeitem .title{
+	font-size: 20px;
+	color: #333;
+}
+.activelist .activeitem p{
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	line-height: 20px;
+}
+.activelist .activeitem .time{
+	color: #999;
+	margin: 10px 0 20px;
+}.activelist .activeitem:hover p,.activelist .activeitem:hover .time,.activelist .activeitem:hover .title{
+	color: #0c9ec8;
+}
+.activelist .activeitem+.activeitem{
+	margin-top: 15px;
 }
