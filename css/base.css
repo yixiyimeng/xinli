@@ -257,7 +257,12 @@ select::-ms-expand {
 	margin-right: auto;
 }
 
-
+.c-green{
+	color: #40ad34;
+}
+.c-red{
+	color: #d02727;
+}
 
 /* 头部 */
 .header{

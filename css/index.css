@@ -332,7 +332,10 @@
 	transition-timing-function: linear;
 	margin: 0 auto;
 }
-
+.consultantlist .swiper-slide{
+	width: 149px;
+	margin-right: 30px;
+}
 .consultantlist .swiper-slide .imgbox{
 	height: 193px;
 	position: relative;
