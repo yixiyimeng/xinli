@@ -484,7 +484,7 @@ cursor: pointer;
 .memberimglist li:nth-child(4n){
 	margin-right: 0;
 	}
-	/* обть */
+	/* О©╫О©╫О©╫О©╫ */
 	.downloadlist{
 		background: #fff;
 		padding: 30px;
@@ -520,15 +520,14 @@ cursor: pointer;
 		margin-top: 20px;
 	}
 	
-	.input-group input[type=text]{
+	.input-group input[type=text],.input-group .input-row select{
 		height: 40px;
 		width: 247px;
 		border: 1px solid #dcdcdc;
 		border-radius: 5px;
 		padding-left: 10px;
-	}.input-group input[type=checkbox]{
-		
 	}
+	
 	.input-group .input-row{
 		margin-bottom: 20px;
 	}
@@ -552,7 +551,7 @@ cursor: pointer;
 			display: inline-block;
 		vertical-align: middle;
 		line-height: 40px;
-		width: 60px;
+		width: 100px;
 		text-align: center;
 	}
 	.input-group .input-row  .radiobox{
@@ -589,6 +588,9 @@ cursor: pointer;
 		width: 490px;
 		background: #0c9ec8;
 	}
+	.input-group .input-row .sendcode{
+		color: #666;
+	}
 	.signup{
 		border-top: 1px solid #ebebeb;
 		padding-top: 65px;
@@ -608,4 +610,46 @@ cursor: pointer;
 		font-weight: bold;
 		color: #0c9ec8;
 	}
-	
+	.memberdetails{
+		background: #fff;
+		padding: 30px;
+	}
+	.memberdetails .imgbox{
+		width: 185px;
+		margin-right: 35px;float: left;
+	}.memberdetails .imgbox+div{
+		width: 910px;
+		float: left;
+		color: #333;
+		padding-top: 15px;
+	}
+	.memberdetails .imgbox+div .title{
+		font-size: 22px;
+		font-weight: bold;
+	}
+	.memberdetails .imgbox+div .title span{
+		font-weight: normal;
+		font-size: 14px;
+		color: #999;
+	}
+	.memberdetails .imgbox+div p{
+		line-height: 28px;
+		margin-top: 25px;
+		text-indent: 2em;
+		
+		}
+	.memberdetails .input-group{
+		margin-left: 220px;
+	}.memberdetails .input-group .title{
+		font-size: 18px;
+		font-weight: bold;
+	}
+	.memberdetails .input-group .title img,.memberdetails .input-group .title span{
+		vertical-align: middle;
+	}
+	.memberdetails .input-group input[type=text],.memberdetails .input-group .input-row select{
+		width: 270px;
+	}
+		.memberdetails .input-group input[type=text].selectdatetime{
+		background: url(../img/time.png) no-repeat 235px center;
+	}
