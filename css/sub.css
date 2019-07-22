@@ -797,9 +797,19 @@ body {
 	position: absolute;
 	text-align: center;
 }
+.paysuccess .paysuccess-hd{
+	padding-top: 30px;
+	text-align: center;
+	font-size: 30px;
+	color: #fff;
+}
+.paysuccess .paysuccess-hd img{
+	display: block;
+	margin: 0 auto 20px;
+}
 .paysuccess .paysuccess-bd{
 	color: #333;
-	padding-top: 240px;
+	padding-top: 105px;
 }.paysuccess .paysuccess-bd p:first-child{
 	font-size: 18px;
 }
